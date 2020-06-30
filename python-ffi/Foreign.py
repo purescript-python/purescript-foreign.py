@@ -11,7 +11,7 @@ def typeOf(value):
 
 
 def tagOf(value):
-    return str(value)
+    return "Number" if type(value) in [int, float] else "String" if type(value) == str else "Boolean" if type(value) == bool else "Function" if callable(value) else "Null" if value is None else "Object"
 
 
 def isNull(value):
