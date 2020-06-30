@@ -1,3 +1,11 @@
+def unsafeFromForeign(value):
+    return value
+
+
+def unsafeToForeign(value):
+    return value
+
+
 def typeOf(value):
     return type(value).__name__
 
